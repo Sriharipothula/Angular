@@ -1,0 +1,7 @@
+.myCard{
+max-width: 300px;
+}
+.headerimage{
+    background-image: url('../../assets/images/img1.jpg');
+    background-size: cover;
+}

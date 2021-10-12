@@ -3,31 +3,24 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FormComponent } from './form/form.component';
-import { ReportsComponent } from './reports/reports.component';
-import { TdfComponent } from './tdf/tdf.component';
-import { FormsModule} from '@angular/forms';
-import{ HttpClientModule}from '@angular/common/http';
-import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
-import { ReactiveFormsModule } from '@angular/forms';
-import { ChangeColorDirective } from './change-color.directive';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material/material.module';
+import { FormsModule } from '@angular/forms';
+import { TestComponent } from './test/test.component';
+ 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormComponent,
-    ReportsComponent,
-    TdfComponent,
-    ReactiveFormsComponent,
-    ChangeColorDirective,
-  ],
+    TestComponent
+  ], 
   imports: [
-    BrowserModule, 
+    BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialModule,
     FormsModule,
-    HttpClientModule,
-    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -6,12 +6,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Forms';
+  title = 'Angular-Material';
+  notfications=3;
+ 
+ showSpinner=false;
+ loaddata(){
+   this.showSpinner=true;
+   setTimeout(()=>{
+     this.showSpinner=false;
+   },1000);
+ }
 
-
-
-  // service.getDetails().subscibe((data)=>{
-    // console.log(data);
-  // })
+ opened=true;
+ username="Srihari";
+ myChange(index:any){
+  console.log(index)
+}
 
 }

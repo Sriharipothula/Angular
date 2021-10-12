@@ -1,9 +1,352 @@
-<!-- <h1>Angular Forms-introduction</h1> -->
-<!-- <app-form></app-form> -->
-<!-- <app-reports></app-reports> -->
-<app-tdf></app-tdf>
-<!-- <div class="my-background"> -->
-<!-- <h1 appChangeColor>Angular Reactive Forms Adding HTML Form</h1> -->
+<h1>This is Angular Material First Project</h1>
+
+
+<!-- <div > -->
+<!-- <button mat-raised-button color="warn">Click me</button> -->
 <!-- </div> -->
-<!-- <app-reactive-forms></app-reactive-forms> -->
-<router-outlet></router-outlet>
+<!--  -->
+<!--  -->
+<!-- <div class="mat-display-1">Header-1</div> -->
+<!-- <div class="mat-display-2">Header-2</div> -->
+<!-- <div class="mat-display-3">Header-3</div> -->
+<!-- <div class="mat-display-4">Header-4</div> -->
+<!--  -->
+<!--  -->
+<!-- <div class="mat-headline">Heading1</div> -->
+<!-- <div class="mat-title">Heading2</div> -->
+<!-- <div class="mat-subheading-1">Heading3</div> -->
+<!-- <div class="mat-subheading-2">Heading4</div> -->
+<!--  -->
+<!-- <div class="mat-body-1">Body Text</div> -->
+<!-- <div class="mat-body-2">Bold Body Text</div> -->
+<!-- <div class="mat-Caption">Caption Text</div> -->
+<!--  -->
+<!-- <div class="mat-typography"> -->
+    <!-- <h1>For Header1</h1> -->
+    <!-- <h2>For Header2</h2> -->
+    <!-- <h3>For Header3</h3> -->
+    <!-- <h4>For Header4</h4> -->
+<!-- </div> -->
+
+<!-- <div> -->
+    <!-- <button mat-button>click Me</button> -->
+    <!-- <button mat-raised-button>Raised-Button</button> -->
+    <!-- <button mat-flat-button>Flat-Button</button> -->
+    <!-- <button mat-stroked-button>Stroked-Button</button> -->
+<!-- </div> -->
+<!--  -->
+<!-- <div> -->
+    <!-- <button mat-raised-button color="primary">Primary color</button> -->
+    <!-- <button mat-flat-button color="warn">Warn color</button> -->
+    <!-- <button mat-stroked-button color="accent">Accent Color</button> -->
+<!-- </div> -->
+<!--  -->
+<!-- <div> -->
+    <!-- <button mat-icon-button>Icon Button</button> -->
+    <!-- <button mat-fab>Fab button</button> -->
+    <!-- <button mat-mini-fab>MiniFab Button</button> -->
+<!-- </div> -->
+<!--  -->
+<!-- <div> -->
+    <!-- <!-- <button mat-raised-button color="primary" disableRipple>Primary color</button> --> 
+    <!-- <!-- <a mat-raised-button color="warn" href="https://www.youtube.com/c/RSKHelpline">RSK Helpline</a> --> 
+<!-- </div> -->
+<!--  -->
+<!--  -->
+<!-- <div> -->
+    <!-- <mat-button-toggle disableRipple #status>Toggle</mat-button-toggle> -->
+    <!-- {{status.checked}}<br> -->
+<!-- </div> -->
+<!--  -->
+<!-- <div> -->
+    <!-- <mat-button-toggle-group #group="matButtonToggleGroup" multiple> -->
+        <!-- <!-- <mat-button-toggle value="Angular" #group1>Angular</mat-button-toggle> --> 
+        <!-- <mat-button-toggle value="React">React</mat-button-toggle> -->
+        <!-- <mat-button-toggle value="Vue">Vue</mat-button-toggle> -->
+        <!-- <mat-button-toggle value="Bootstrap">Bootstrap -->
+<!-- </mat-button-toggle> -->
+    <!-- </mat-button-toggle-group> -->
+    <!-- {{group.value}} -->
+    <!-- {{group1.checked}} -->
+<!-- </div>  -->
+
+<!-- <div> -->
+   <!-- <mat-icon class="primary">check_circle</mat-icon> -->
+<!-- </div> -->
+<!--  -->
+<!-- <div> -->
+    <!-- <mat-icon class="accent">home</mat-icon> -->
+ <!-- </div> -->
+ <!-- <div> -->
+   <!-- <mat-icon class="warn">verified_user</mat-icon> -->
+<!-- </div> -->
+<!--  -->
+<!-- <div> -->
+    <!-- <mat-icon class="warn">verified</mat-icon> -->
+ <!-- </div> -->
+<!--  -->
+ <!-- <div> -->
+     <!-- <!-- <!-- <button matBadge="5" matBadgePosition="below before" matBadgeSize="large" matBadgeColor="warn" matBadgeOverlap="false">Notifications</button> --> 
+ <!-- </div> -->
+<!--  -->
+ <!-- <div> -->
+    <!-- <!-- <!-- <button matBadge="6" matBadgePosition="below after" matBadgeSize="medium" matBadgeColor="accent"  matBadgeOverlap="false">Notifications</button> --> 
+<!-- </div> -->
+<!--  -->
+<!-- <div> -->
+    <!-- <!-- <!-- <button matBadge="8" matBadgePosition="above before" matBadgeSize="small" matBadgeColor="primary"  matBadgeOverlap="false">Notifications</button> --> 
+<!-- </div>  -->
+<!--  -->
+<!-- <div> -->
+    <!-- <!-- <!-- <button [matBadge]="notfications" matBadgePosition="above after" matBadgeSize="medium" matBadgeColor="warn" matBadgeOverlap="true">Notifications</button> --> 
+<!-- </div>  -->
+<!--  -->
+<!-- <div> -->
+    <!-- <!-- <!-- <button [matBadge]="notfications" matBadgeSize="large" matBadgePosition="above before" matBadgeOverlap="false">Notifications</button> --> 
+<!-- </div> -->
+<!--  -->
+<!-- <div> -->
+    <!-- <!-- <button [matBadge]="notfications"  matBadgeColor="accent" [matBadgeHidden]="notfications===2">Notifications</button> --> 
+<!-- </div> -->
+
+<!-- <div class="msg"> -->
+    <!-- <mat-progress-spinner value="40"></mat-progress-spinner> -->
+<!-- </div> -->
+<!--  -->
+<!-- <div class="msg"> -->
+    <!-- <mat-progress-spinner value="50"></mat-progress-spinner> -->
+<!-- </div> -->
+<!--  -->
+<!-- <div class="msg"> -->
+    <!-- <mat-progress-spinner value="90"></mat-progress-spinner> -->
+<!-- </div> -->
+<!--  -->
+ <!-- <div>  -->
+     <!-- <mat-spinner *ngIf="showSpinner" color="warn"></mat-spinner>  -->
+     <!-- <button mat-raised-button color="warn" (click)="loaddata()" >Load Data</button>  -->
+ <!-- </div>  -->
+
+<mat-toolbar color="warn" class="nav-bar">
+    <div>
+     <button (click)="opened=!opened" color="warn"><mat-icon>menu</mat-icon></button> 
+    Toolbar
+    </div>
+
+    <div>
+        <button mat-button>Home</button>
+        <button mat-button>About Us</button>
+         <button mat-button [matMenuTriggerFor]="servicesMenu">Services</button> 
+        <button mat-button>Contact Us</button>
+        <button mat-button routerLink="/profile">Profile</button>
+        <button mat-button [matMenuTriggerFor]="logoutmenu">logout</button>
+    </div>
+</mat-toolbar>
+
+<mat-drawer-container>
+    <mat-drawer mode="side" [(opened)]="opened">Side Content   
+
+     <mat-nav-list>
+     <a mat-list-item href="#"><mat-icon>home</mat-icon> Home</a>
+    </mat-nav-list>  
+
+     <mat-divider></mat-divider>
+
+
+    <mat-nav-list>
+     <a mat-list-item href="#"><mat-icon>security</mat-icon> Security</a>
+    </mat-nav-list>
+
+    <mat-divider></mat-divider>
+
+     <mat-nav-list>
+    <a mat-list-item href="#"><mat-icon>folder</mat-icon> Folder</a>
+    </mat-nav-list>
+
+    <mat-divider></mat-divider>
+
+    <mat-nav-list>
+     <a mat-list-item href="#"><mat-icon>add_shopping_cart</mat-icon> Shooping</a> 
+     </mat-nav-list> 
+
+     <mat-divider></mat-divider>
+
+    </mat-drawer>
+        <mat-drawer-content>
+
+          <mat-grid-list cols="1" rowHeight="150px">
+          <mat-grid-tile>
+              <mat-tab-group #tabref (selectedTabChange)="myChange(tabref.selectedIndex)">
+               <mat-tab label="Angular">Angular Content</mat-tab>
+               <mat-tab label="React Js">React Js Content</mat-tab>
+               <mat-tab label="Vue Js">Vue Js Content</mat-tab>
+               <mat-tab label="nodejs">Nodejs Content</mat-tab>
+               <mat-tab label="JavaScript">JavaScript Content</mat-tab>
+
+              </mat-tab-group>         
+          </mat-grid-tile>
+          <div>
+            <h3>{{tabref.selectedIndex}}</h3>
+          </div>
+        </mat-grid-list>
+
+             
+             
+             
+          
+ 
+            <mat-grid-list cols="3" rowHeight="600px" gutterSize="5px">
+
+                <!-- <mat-grid-tile > -->
+
+                    <!-- <mat-accordion multi="true" > -->
+                    <!-- <mat-expansion-panel > -->
+                        <!-- <mat-expansion-panel-header> -->
+                          <!-- <mat-panel-title> -->
+                            <!-- This is the expansion title1 -->
+                          <!-- </mat-panel-title> -->
+                          <!-- <mat-panel-description> -->
+                            <!-- This is a summary of the content -->
+                          <!-- </mat-panel-description> -->
+                        <!-- </mat-expansion-panel-header> -->
+                        <!-- <h2>This is the primary content of the panel.</h2> -->
+
+                         <!-- <mat-action-row>  -->
+                        <!-- <button mat-raised-button color="warn">Register</button>  -->
+                          <!-- </mat-action-row> -->
+                      <!-- </mat-expansion-panel>                     -->
+
+                      <!-- <mat-expansion-panel > -->
+                        <!-- <mat-expansion-panel-header> -->
+                          <!-- <mat-panel-title> -->
+                            <!-- This is the expansion title2 -->
+                          <!-- </mat-panel-title> -->
+                          <!-- <mat-panel-description> -->
+                            <!-- This is a summary of the content -->
+                          <!-- </mat-panel-description> -->
+                        <!-- </mat-expansion-panel-header> -->
+                        <!-- <h2>This is the primary content of the panel2</h2> -->
+                         <!-- <mat-action-row>  -->
+                        <!-- <button mat-raised-button color="primary">Register</button>  -->
+                          <!-- </mat-action-row> -->
+                      <!-- </mat-expansion-panel>   -->
+                 <!-- </mat-accordion> -->
+
+            <!-- </mat-grid-tile> -->
+
+            <!-- <mat-grid-tile > -->
+                <!-- <mat-accordion multi="true" > -->
+                    <!-- <mat-expansion-panel > -->
+                        <!-- <mat-expansion-panel-header> -->
+                          <!-- <mat-panel-title> -->
+                            <!-- This is the expansion title3 -->
+                          <!-- </mat-panel-title> -->
+                          <!-- <mat-panel-description> -->
+                            <!-- This is a summary of the content -->
+                          <!-- </mat-panel-description> -->
+                        <!-- </mat-expansion-panel-header> -->
+                        <!-- <h2>This is the primary content of the panel.</h2> -->
+                         <!-- <mat-action-row>  -->
+                        <!-- <button mat-raised-button color="warn">Register</button>  -->
+                          <!-- </mat-action-row> -->
+                      <!-- </mat-expansion-panel>   -->
+
+                      <!-- <mat-expansion-panel > -->
+                        <!-- <mat-expansion-panel-header> -->
+                          <!-- <mat-panel-title> -->
+                            <!-- This is the expansion title4 -->
+                          <!-- </mat-panel-title> -->
+                          <!-- <mat-panel-description> -->
+                            <!-- This is a summary of the content -->
+                          <!-- </mat-panel-description> -->
+                        <!-- </mat-expansion-panel-header> -->
+                        <!-- <h2>This is the primary content of the panel2</h2> -->
+                         <!-- <mat-action-row>              -->
+                        <!-- <button mat-raised-button color="accent">Register</button>  -->
+                          <!-- </mat-action-row> -->
+                      <!-- </mat-expansion-panel>   -->
+                 <!-- </mat-accordion> -->
+                <!-- </mat-grid-tile> -->
+
+
+                      <!-----------stepeer cod</mat-horizontal-stepper>e Starts------------->
+                      <mat-grid-tile>
+                      <mat-horizontal-stepper>
+                          <mat-step label="Step 1" state="phone">
+                            <p>Put down your phones.</p>
+                            <div>
+                              <button mat-raised-button	matStepperNext color="warn">Next</button>
+                            </div>
+                          </mat-step>
+                          <mat-step label="Step 2" state="chat">
+                            <p>Socialize with each other.</p>
+                            <div>
+                              <button mat-raised-button matStepperPrevious color="primary">Back</button>
+                              <button mat-raised-button matStepperNext color="warn">Next</button>
+                            </div>
+                          </mat-step>
+                          <mat-step label="Step 3">
+                            <p>You're welcome.</p>
+                          </mat-step>
+                      </mat-horizontal-stepper>
+
+                    </mat-grid-tile>
+
+                    <mat-grid-tile>
+                      <mat-vertical-stepper>
+                          <mat-step label="Step 1" state="phone">
+                            <p>Put down your phones.</p>
+                            <div>
+                              <button mat-raised-button	matStepperNext color="warn">Next</button>
+                            </div>
+                          </mat-step>
+                          <mat-step label="Step 2" state="chat">
+                            <p>Socialize with each other.</p>
+                            <div>
+                              <button mat-raised-button matStepperPrevious color="primary">Back</button>
+                              <button mat-raised-button matStepperNext color="warn">Next</button>
+                            </div>
+                          </mat-step>
+                          <mat-step label="Step 3">
+                            <p>You're welcome.</p>
+                          </mat-step>
+                      </mat-vertical-stepper>
+                    </mat-grid-tile>
+
+
+
+                <mat-grid-tile>
+                  <router-outlet></router-outlet>
+                </mat-grid-tile>
+
+            </mat-grid-list>
+        
+          </mat-drawer-content>  
+
+        
+</mat-drawer-container>
+
+
+
+
+
+<mat-menu #servicesMenu="matMenu">
+     <button mat-menu-item [matMenuTriggerFor]="FrontEndMenu">FrontEnd</button> 
+    <button mat-menu-item> BackEnd</button>
+</mat-menu>
+
+<mat-menu #FrontEndMenu="matMenu">
+    <button mat-menu-item>Angular</button>
+    <button mat-menu-item>Angular-Material</button>
+    <button mat-menu-item>JavaScript</button>
+</mat-menu>
+
+<mat-menu #logoutmenu="matMenu">
+    <button mat-menu-item >logout-{{username}}</button>
+</mat-menu>
+
+
+
+
+
+
+  

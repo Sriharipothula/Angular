@@ -1,0 +1,31 @@
+
+#reports{
+width: 20%;
+background-color: black;
+height: 100vh;
+}
+li{
+    color: #fff;
+    font-size: 20px;
+    list-style-type: none;
+    padding-top: 40px;
+
+}
+.ul-all .li:hover .bi-chevron-right{
+    visibility: visible;
+
+}
+
+
+.bi-chevron-right
+{
+    padding: 0 10px ;
+    visibility: hidden;
+}
+/* .ul-all:hover{ */
+    /* display: block; */
+/* } */
+/* .bi1 bi-chevron-right{ */
+    /* padding */
+/* } */
+
